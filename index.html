@@ -55,29 +55,33 @@
     <form action="" class="container mt-5">
       <div class="form-group">
         <label for="exampleFormControlSelect1">Marca</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-          <option>Chevrolet</option>
-          <option>Ford</option>
-          <option>Nissan</option>
+        <select id="marcaForm" required="true" class="form-control" id="exampleFormControlSelect1">
+          <option value="">selecciona</option>
+    <!--Ningun option funciona sin value-->
+          <option value="Chevrolet">Chevrolet</option>
+          <option value="Ford">Ford</option>
+          <option value="Nissan">Nissan</option>
         </select>
       </div>
       <div class="form-group">
         <label for="exampleFormControlSelect1">Modelo</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-          <option>2019</option>
-          <option>2020</option>
+        <select id="anioForm" required="true" class="form-control" id="exampleFormControlSelect1">
+          <option value="">selecciona</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
         </select>
       </div>
       <div class="form-group">
         <label for="exampleFormControlSelect1">Caja de Velocidades</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-          <option>Manual</option>
-          <option>Automático</option>
+        <select id="transForm" required="true" class="form-control" id="exampleFormControlSelect1">
+          <option value="">selecciona</option>
+          <option value="manual">Manual</option>
+          <option value="auto">Automático</option>
         </select>
       </div>
       <div>
         <label>Example range</label>
-        <input
+        <input required="true"
           type="range"
           class="form-control-range"
           id="myRange"
@@ -97,7 +101,7 @@
           <div class="col-4 d-flex justify-content-end">$150,000</div>
         </label>
       </div>
-      <button type="button" class="btn btn-primary btn-lg btn-block mt-4">Solicitar</button>
+      <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Solicitar</button>
     </form>
     
     <div class="container mt-5">

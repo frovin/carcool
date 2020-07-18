@@ -6,6 +6,22 @@
   //     return precio;
   // });;
 
+  var form=document.querySelector('form.container')
+    form.addEventListener('submit',function(event){
+      event.preventDefault()
+      var marcaForm=document.getElementById('marcaForm')
+      var anioForm=document.getElementById('anioForm')
+      var transForm=document.getElementById('transForm')
+      var myRange=document.getElementById('myRange')
+      console.log(marcaForm.value)
+      console.log(anioForm.value)
+      console.log(transForm.value)
+      console.log(myRange.value)
+    })
+
+
+
+
   function carCool() {
     for (var i = 0; i < autos.length; i++) {
       var logo = document.createElement("img");
