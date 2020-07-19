@@ -12,6 +12,8 @@
       var anioForm = document.getElementById("anioForm");
       var transForm = document.getElementById("transForm");
       var myRange = document.getElementById("myRange");
+      var presupuesto = document.getElementById("presupuesto");
+      presupuesto.innerHTML = "Presupuesto: $"+myRange.value;
       console.log(marcaForm.value);
       console.log(anioForm.value);
       console.log(transForm.value);
@@ -58,21 +60,22 @@
           "https://purepng.com/public/uploads/large/purepng.com-nissan-logonissannissan-motorautomobile-manufactureryokohamanissan-logo-1701527528576qog0u.png"
         );
       }
+
       var marca = document.createElement("h5");
       marca.className = "list-group-item";
-      marca.innerHTML = "MARCA: " + resultadoCoches[i].make;
+      marca.innerHTML = "Marca: " + resultadoCoches[i].make;
       var modelo = document.createElement("li");
       modelo.className = "list-group-item";
-      modelo.innerHTML = "MODELO: " + resultadoCoches[i].model;
+      modelo.innerHTML = "Modelo: " + resultadoCoches[i].model;
       var precio = document.createElement("li");
       precio.className = "list-group-item";
-      precio.innerHTML = "PRECIO: $" + resultadoCoches[i].price;
+      precio.innerHTML = "Precio: $" + resultadoCoches[i].price;
       var colores = document.createElement("li");
       colores.className = "list-group-item";
-      colores.innerHTML = "COLORES: " + resultadoCoches[i].colors;
+      colores.innerHTML = "Colores: " + resultadoCoches[i].colors;
       var transmision = document.createElement("li");
       transmision.className = "list-group-item";
-      transmision.innerHTML = "TRANSMISION: " + resultadoCoches[i].transmision;
+      transmision.innerHTML = "Transmision: " + resultadoCoches[i].transmision;
   
       var card = document.createElement("div");
       card.className = "card mt-5";

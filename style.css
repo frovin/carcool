@@ -1,14 +1,24 @@
 html,body{
 width: 100%; 
 height: 100%;
+background-color: #fff4f1;
 }
 
 .card{
     border-radius: 10px;
-    border: solid black;
+    background-color: #DDE9D8;
+    border: solid #C6DABE; 
+}
+
+.card-body{
+    background-color: #DDE9D8;
 }
 
 .list-group-item{
 padding: 0px;
 margin: 10px;
+background-color: #DDE9D8;
+display: flex;
+justify-content: center;
+border-color: #DDE9D8;
 }
